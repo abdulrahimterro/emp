@@ -1,0 +1,17 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "printWidth": 128,
+  "semi": true,
+  "singleQuote": false,
+  "bracketSpacing": true,
+  "endOfLine": "crlf",
+  "overrides": [
+    {
+      "files": "router.js",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "port": 8000,
+  "website": "http://localhost:8000",
+  "domain": "http://localhost:8000/api",
+
+  "database": {
+    "sequelize": {
+      "url": "mysql://mshv97:password@localhost:3306/brands_menu",
+      "logging": false,
+      "migrationStorage": "sequelize",
+      "seederStorage": "sequelize"
+    }
+  },
+
+  "paymentRedirect": {
+    "success": "?payment=success",
+    "failed": "?payment=failed",
+    "canceled": "?payment=canceled",
+    "error": "?payment=error"
+  },
+
+  "jwt": {
+    "access": {
+      "key": "f62c983a29207bebde15bf4d53790bbb9756e13f922c4643d32a579f33fb27197abd2b6839a68dfa5c3b57fc978c6c4f545a78f7397eeb755694c71daf45ae7f",
+      "duration": "60d"
+    },
+    "refresh": {
+      "key": "b7bf486ae98a214983d9d5a584d945d0aaca1e342949be3d08e7de85cf1a58a005bc8397518391360401257575ebf5606928b00b1db0e497ad0edb9dc4a85a05",
+      "duration": "60d"
+    }
+  },
+
+  "bcrypt": { "rounds": 10 },
+
+  "mail": {
+    "host": "mocha3034.mochahost.com",
+    "port": 465,
+    "noReply": "no-reply@brandsmenu.com",
+    "support": "support@brandsmenu.com",
+    "password": "EE0wuPE95v9B"
+  },
+
+  "assetsPath": {
+    "restaurant": { "logo": "assets/restaurant/logos/" },
+    "category": { "icon": "assets/category/icons/" },
+    "menu": { "image": "assets/menu/images/" },
+    "dish": { "images": "assets/dish/images/" },
+    "user": { "avatar": "assets/user/avatars/" },
+    "permission": { "path": "assets/permission/" }
+  },
+
+  "emailsTemplate": {
+    "emailVerification": "assets/emails/email-verification.ejs",
+    "userInvite": "assets/emails/user-invite.ejs",
+    "forgotPassword": "assets/emails/forget-password.ejs",
+    "partnerMail": "assets/emails/partners-mail.ejs"
+  },
+
+  "paypal": {
+    "mode": "sandbox",
+    "clientId": "AWRECGHQEAa__oabo17M7g7R_bS5XVnweIX40PUOT9c5C4z-rZPumPttY6vx1HLWSX3nOfqxGkvf6zYc",
+    "clientSecret": "EHonOjFwQ-WsMSeyVSbC9IAbU5aYbWqZEkMAGaQ7lTYX_2gKISvv93cJH7jraFtfbDwP8en2ohnFhP-s"
+  },
+
+  "stripe": {
+    "secret": "sk_test_51HyJLQFsvwyr1OnoErx75bY9n8gRNdvVySY5mK99nOf6kTt8ndG84WKYGVNB4jG2g01XTzRgs0Y9CyGu0zEw8R4u00GOux3RiK",
+    "public": "pk_test_51HyJLQFsvwyr1Ono0smm05PrgbyGGQapJwmw7XLnG9eJ1Kn9LWqZGyEIFpgxsA00zTRUr7d7CP5qxZYgtQMjimis00E6Hx14my"
+  }
+}
