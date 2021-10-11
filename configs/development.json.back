@@ -5,13 +5,13 @@
 
   "database": {
     "sequelize": {
-      "url": "mysql://mshv97:password@localhost:3306/brands_menu",
+      "url": "mysql://abd:Aa12345!@127.0.0.1:3306/employee",
       "logging": false,
       "migrationStorage": "sequelize",
       "seederStorage": "sequelize"
     }
   },
-
+  
   "paymentRedirect": {
     "success": "?payment=success",
     "failed": "?payment=failed",
